@@ -9,12 +9,7 @@ print("Press 4 for substraction")
 print("Press 5 for exiting thr calculator")
 
 while True:
-    user_command = int(input("Enter your choice: "))
-
-
-    if user_command == 5:
-        print("Exiting the calculator!")
-        break
+    user_command = input("Enter your choice: ")
 
     if user_command in ('1','2','3','4'):
         try:
@@ -35,10 +30,11 @@ while True:
                 print(result4)
         except ValueError:
             print("Invalid input, please enter numeric values")
-    
+    elif user_command == '5':
+        print("Exiting the calculator")
+        break
     else:
         print("Invalid choice, please enter the correct choice")
-        continue
 
                 
         
